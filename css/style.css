@@ -1,0 +1,360 @@
+/*--------------------------------------------
+/* Login page
+/*---------------------------------------------*/
+.login-container{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-height:100%;
+  max-width:100%;   
+  width: 300px;
+  height: 180px;
+  border: 2px solid #D3D3D3;
+  border-radius: 5px;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color:#f8f9fa;
+  transition: all 0.5s linear;
+}
+
+.login-container:hover{
+  box-shadow: 6px 6px #C0C0C0;
+  border-radius: 8px;
+}
+
+.login-container form{
+  text-align: center;
+  padding: 10px;
+}
+
+.login-container input{
+  box-shadow: 1.5px 1.5px #C0C0C0;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.login-container .btn-submit{
+  height: 50px;
+  background: white;
+  border-radius: 10px;
+  color: none;
+  text-shadow: none;
+  box-shadow: 1.8px 1.8px #C0C0C0;
+  border: none;
+  cursor: pointer;
+  /* transition: box-shadow 1s, font-style 1s; */
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.login-container .btn-submit:hover{
+  color: white;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color: #778899;
+  border-radius: 13px;
+}
+
+.login-container form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-style: italic;
+  opacity: 1; /* Firefox */
+}
+
+/*--------------------------------------------
+/* Signin page
+/*---------------------------------------------*/
+.sign-container{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-height:100%;
+  max-width:100%;   
+  width: 300px;
+  height: 400px;
+  border: 2px solid #D3D3D3;
+  border-radius: 5px;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color:#f8f9fa;
+  transition: all 0.5s linear;
+}
+
+.sign-container:hover{
+  box-shadow: 6px 6px #C0C0C0;
+  border-radius: 8px;
+
+}
+
+.sign-container form{
+  text-align: center;
+  padding: 10px;
+}
+
+.sign-container form img{
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.sign-container .emp-id{
+  font-style: italic;
+  font-size: 10px;
+}
+
+.sign-container .emp-name{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.sign-container .emp-timestamp{
+  font-size: 15px;
+}
+
+.sign-container .btn-check-in{
+  margin: 10px;
+  height: 50px;
+  background: #90EE90;
+  border-radius: 10px;
+  color: none;
+  text-shadow: none;
+  box-shadow: 1.8px 1.8px #C0C0C0;
+  border: none;
+  cursor: pointer;
+  /* transition: box-shadow 1s, font-style 1s; */
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.sign-container .btn-check-in:hover{
+  color: white;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color: #66b34d;
+  border-radius: 13px;
+}
+
+.sign-container .btn-check-out{
+  margin: 10px;
+  height: 50px;
+  background: #ff9999;
+  border-radius: 10px;
+  color: none;
+  text-shadow: none;
+  box-shadow: 1.8px 1.8px #C0C0C0;
+  border: none;
+  cursor: pointer;
+  /* transition: box-shadow 1s, font-style 1s; */
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.sign-container .btn-check-out:hover{
+  color: white;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color: #ec4913;
+  border-radius: 13px;
+}
+
+.sign-container .btn-dashboard{
+  margin: 10px;    
+  height: 50px;
+  background: #ADD8E6;
+  border-radius: 10px;
+  color: none;
+  text-shadow: none;
+  box-shadow: 1.8px 1.8px #C0C0C0;
+  border: none;
+  cursor: pointer;
+  /* transition: box-shadow 1s, font-style 1s; */
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.sign-container .btn-dashboard:hover{
+  color: white;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color: #194de6;
+  border-radius: 13px;
+}
+
+/*--------------------------------------------
+/* Tabs
+/*---------------------------------------------*/
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 1s; 
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*--------------------------------------------
+/* Dashboard
+/*---------------------------------------------*/
+.navbar{
+  box-shadow: 1px 0.5px #C0C0C0;
+  transition: all 0.5s linear;
+  margin-bottom: 25px;
+}
+
+.navbar:hover{
+  box-shadow: 3px 2.5px #C0C0C0;
+  border-radius: 8px;
+}
+
+.login-info{
+  display: block;
+}
+
+.login-info img{
+  height: 25px;
+  border-radius: 50%;
+}
+
+.login-info label{
+  display: inline;
+}
+
+.dashboard-container{
+  margin: auto;
+  width: 900px;
+  height: 450px;
+  border: 2px solid #D3D3D3;
+  border-radius: 5px;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color:#f8f9fa;
+  transition: all 0.5s linear;
+}
+
+.dashboard-container:hover{
+  box-shadow: 6px 6px #C0C0C0;
+  border-radius: 8px;
+}
+
+.dashboard-container .btn-submit{
+  height: 40px;
+  background: white;
+  border-radius: 10px;
+  color: none;
+  text-shadow: none;
+  box-shadow: 1.8px 1.8px #C0C0C0;
+  border: none;
+  cursor: pointer;
+  /* transition: box-shadow 1s, font-style 1s; */
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.dashboard-container .btn-submit:hover{
+  color: white;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color: #778899;
+  border-radius: 13px;
+}
+
+.query-container{
+  margin: auto;
+  padding: 10px;
+  background-color: #f1f1f1;
+  
+}
+
+
+/*--------------------------------------------
+/* Leave container
+/*---------------------------------------------*/
+
+.apply-leave-container{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  max-height:100%;
+  max-width:100%;   
+  width: 300px;
+  height: 400px;
+  border: 2px solid #D3D3D3;
+  border-radius: 5px;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color:#f8f9fa;
+  transition: all 0.5s linear;
+}
+
+.apply-leave-container:hover{
+  box-shadow: 6px 6px #C0C0C0;
+  border-radius: 8px;
+
+}
+
+.apply-leave-container form{
+  text-align: center;
+  padding: 10px;
+}
+
+.apply-leave-container form input{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.apply-leave-container  .btn-submit{
+  height: 50px;
+  background: white;
+  border-radius: 10px;
+  color: none;
+  text-shadow: none;
+  box-shadow: 1.8px 1.8px #C0C0C0;
+  border: none;
+  cursor: pointer;
+  /* transition: box-shadow 1s, font-style 1s; */
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+}
+
+.apply-leave-container .btn-submit:hover{
+  color: white;
+  box-shadow: 3px 3px #C0C0C0;
+  background-color: #778899;
+  border-radius: 13px;
+}
